@@ -7,40 +7,39 @@
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles/scss/styles.css">
 
   <title>Frontend Mentor | Order summary card</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
 </head>
 
 <body>
 
-  <main>
-    <article>
-      <div><img src="./images/illustration-hero.svg" alt="Illustration"></div>
-      <h2>Order Summary</h2>
-      <p>
-        You can now listen to millions of songs, audiobooks, and podcasts on any
-        device anywhere you like!
-      </p>
-      <img src="./images/icon-music.svg" alt="Music Icon">
-      <div>
-        Annual Plan
-        $59.99/year
+  <main class="container flex col items-center justify-center">
+    <article class="card text-center rounded-lg">
+      <div class="card__img">
+        <img src="./images/illustration-hero.svg" alt="Illustration">
       </div>
-      <a class="link" href="#">Change</a>
-      <a class="btn primary" href="#">Proceed to Payment</a>
-      <a class="btn secondary" href="#">Cancel Order</a>
+      <div class="card__content">
+        <h2 class="font-heading">Order Summary</h2>
+        <p class="text-light">
+          You can now listen to millions of songs, audiobooks, and podcasts on any
+          device anywhere you like!
+        </p>
+        <div class="card__cost-plan flex justify-between items-center rounded-md">
+          <div class="flex items-center gap-1">
+            <img class="icon" src="./images/icon-music.svg" alt="Music Icon">
+            <div class="flex col">
+              <p class="font-bold">Annual Plan</p>
+              <p class="text-light">$59.99/year</p>
+            </div>
+          </div>
+          <a class="link" href="#">Change</a>
+        </div>
+        <div class="btns">
+          <button class="btn primary text-center font-bold rounded-md">Proceed to Payment</button>
+          <button class="btn secondary text-center text-light font-bold">Cancel Order</button>
+        </div>
+      </div>
     </article>
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.

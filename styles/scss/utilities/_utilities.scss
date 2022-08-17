@@ -1,0 +1,95 @@
+@use "../base/base" as *;
+
+.text-center {
+  text-align: center;
+}
+
+.font-heading {
+  font-size: $fs-heading;
+  font-weight: $fw-900;
+}
+
+.font-bold {
+  font-weight: $fw-700;
+}
+
+.text-light {
+  color: $clr-neutral-hover-200;
+}
+
+.flex {
+  display: flex;
+}
+
+.gap-1 {
+  gap: 1rem;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.col {
+  flex-direction: column;
+}
+
+.btn {
+  width: 100%;
+  display: block;
+  border: none;
+  cursor: pointer;
+  padding: 0.8rem;
+  background: none;
+}
+
+.primary {
+  margin-bottom: 1rem;
+  background: $clr-primary;
+  color: hsl(255, 100%, 100%);
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+
+  &:hover {
+    background: $clr-primary-hover;
+  }
+}
+
+.secondary:hover {
+  color: $clr-neutral-hover-300;
+}
+
+.link {
+  text-decoration: underline;
+  color: $clr-primary;
+
+  &:hover {
+    color: $clr-primary-hover;
+  }
+}
+
+.rounded-md {
+  border-radius: 0.7rem;
+  -webkit-border-radius: 0.7rem;
+  -moz-border-radius: 0.7rem;
+  -ms-border-radius: 0.7rem;
+  -o-border-radius: 0.7rem;
+}
+
+.rounded-lg {
+  border-radius: 1.1rem;
+  -webkit-border-radius: 1.1rem;
+  -moz-border-radius: 1.1rem;
+  -ms-border-radius: 1.1rem;
+  -o-border-radius: 1.1rem;
+}

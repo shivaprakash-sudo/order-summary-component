@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+*,
+::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  font: inherit;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+}
+body .container {
+  min-height: 100vh;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.font-heading {
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.text-light {
+  color: hsl(224deg, 23%, 55%);
+}
+
+.flex {
+  display: flex;
+}
+
+.gap-1 {
+  gap: 1rem;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.col {
+  flex-direction: column;
+}
+
+.btn {
+  width: 100%;
+  display: block;
+  border: none;
+  cursor: pointer;
+  padding: 0.8rem;
+  background: none;
+}
+
+.primary {
+  margin-bottom: 1rem;
+  background: hsl(245deg, 75%, 52%);
+  color: hsl(255deg, 100%, 100%);
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+.primary:hover {
+  background: hsl(245deg, 75%, 60%);
+}
+
+.secondary:hover {
+  color: hsl(223deg, 47%, 23%);
+}
+
+.link {
+  text-decoration: underline;
+  color: hsl(245deg, 75%, 52%);
+}
+.link:hover {
+  color: hsl(245deg, 75%, 60%);
+}
+
+.rounded-md {
+  border-radius: 0.7rem;
+  -webkit-border-radius: 0.7rem;
+  -moz-border-radius: 0.7rem;
+  -ms-border-radius: 0.7rem;
+  -o-border-radius: 0.7rem;
+}
+
+.rounded-lg {
+  border-radius: 1.1rem;
+  -webkit-border-radius: 1.1rem;
+  -moz-border-radius: 1.1rem;
+  -ms-border-radius: 1.1rem;
+  -o-border-radius: 1.1rem;
+}
+
+.card {
+  width: min(90%, 25rem);
+  margin: 0 auto;
+  box-shadow: 0 0 2rem -1rem hsl(223deg, 47%, 23%);
+  overflow: hidden;
+}
+.card__content {
+  display: grid;
+  gap: 1.5rem;
+  padding: 1.5rem;
+}
+.card__cost-plan {
+  padding: 1.25rem 1rem;
+  background: hsl(225deg, 100%, 98%);
+}
+
+.attribution {
+  margin-top: 1rem;
+  font-size: 0.6896551724rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+@media (min-width: 600px) {
+  .card__content {
+    padding: 2rem 3rem;
+  }
+}/*# sourceMappingURL=styles.css.map */
