@@ -148,6 +148,9 @@ body .container {
   padding: 1.5rem;
   background-color: hsl(255deg, 100%, 100%);
 }
+.card__content p {
+  line-height: 1.5;
+}
 .card__cost-plan {
   padding: 1.25rem 1rem;
   background: hsl(225deg, 100%, 98%);
