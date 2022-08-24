@@ -6,7 +6,7 @@
 $clr-primary: hsl(245, 75%, 52%);
 $clr-secondary: hsl(225, 100%, 94%);
 
-$clr-primary-hover: hsl(245, 75%, 60%);
+$clr-primary-hover: hsl(245, 75%, 70%);
 
 // neutral colours
 $clr-neutral-hover-100: hsl(225, 100%, 98%);
@@ -31,6 +31,7 @@ $fw-900: 900;
 
 img {
   max-width: 100%;
+  display: block;
 }
 
 button {
@@ -39,9 +40,20 @@ button {
 
 body {
   font-family: $ff-primary;
+  background-color: $clr-secondary;
+  background-image: url(/images/pattern-background-mobile.svg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
 
   .container {
-    // background: top left no-repeat url(./images/pattern-background-mobile.svg);
     min-height: 100vh;
+  }
+}
+
+@media (min-width: 375px) {
+  body {
+    background-image: url(/images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
   }
 }

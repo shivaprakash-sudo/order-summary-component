@@ -5,10 +5,21 @@
   margin: 0 auto;
   box-shadow: 0 0 2rem -1rem $clr-neutral-hover-300;
   overflow: hidden;
+
+  &__img:hover img {
+    scale: 1.1;
+    transition: scale 300ms ease-in-out;
+    -webkit-transition: scale 300ms ease-in-out;
+    -moz-transition: scale 300ms ease-in-out;
+    -ms-transition: scale 300ms ease-in-out;
+    -o-transition: scale 300ms ease-in-out;
+  }
+
   &__content {
     display: grid;
     gap: 1.5rem;
     padding: 1.5rem;
+    background-color: hsl(255, 100%, 100%);
   }
 
   &__cost-plan {
